@@ -101,7 +101,7 @@ padding-bottom: 24px;
     color: #000000;
 }
 
-.menu-link {
+.menu-link-studio {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.43;
@@ -109,24 +109,18 @@ padding-bottom: 24px;
     color: var(--title-text-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding-top: 32px;
-    padding-bottom: 32px;
-}
-
-.menu-link:hover,
-.menu-link:focus { 
-    color: #2196F3; 
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+    padding-bottom: 32px;}
 
 
-.menu-link{
+
+.menu-link-studio{
     position: relative;
 
     
 }
-.menu-link::after {
+.menu-link-studio::after {
     position: absolute;
-    opacity: 0;
+    opacity: 1;
     content: "";
     left:0;
     bottom: 0;
@@ -137,7 +131,7 @@ padding-bottom: 24px;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.menu-link:hover::after{
+.menu-link-studio:hover::after{
     opacity: 1;
     
 }
@@ -592,6 +586,43 @@ font-style: normal;
 
 /* portfolio -------------------------------*/
 
+.menu-link-portfolio {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.43;
+    letter-spacing: 0.02em;
+    color: var(--title-text-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+
+
+.menu-link-portfolio{
+    position: relative;
+
+
+}
+
+.menu-link-portfolio::after {
+    position: absolute;
+    opacity: 1;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: rgba(33, 150, 243, 1);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-link-portfolio:hover::after {
+    opacity: 1;
+
+}
+
 .header-portfolio {
     border-bottom: 1px solid #ECECEC;;
 }
@@ -817,7 +848,7 @@ padding-right: 24px;
    line-height: 1.14;
    color: #FFFFFF;
     text-transform: uppercase;
-   font-weight: 500;
+   font-weight: 700;
 
 }
 
@@ -891,7 +922,7 @@ visibility 250ms cubic-bezier(0.4, 0, 0.2, 1)
 /* --/moal form-------------------------------------- */
 
 .modal-window-title {
-    font-weight: 500;
+    font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
     text-align: center;
@@ -940,6 +971,7 @@ visibility 250ms cubic-bezier(0.4, 0, 0.2, 1)
 
 .modal-form-field {
     margin-bottom: 10px;
+    
 }
 
 
@@ -965,6 +997,7 @@ visibility 250ms cubic-bezier(0.4, 0, 0.2, 1)
     height: 120px;
     padding: 12px 16px;
     border-radius: 4px;
+    border-color: rgba(33, 33, 33, 0.2);
   
 }
 
@@ -1000,7 +1033,7 @@ visibility 250ms cubic-bezier(0.4, 0, 0.2, 1)
     border-color: rgba(33, 33, 33, 1);
     border-radius: 2px;
     cursor: pointer;
-   
+    margin-left: 12px;
     margin-right: 8px;
 }
 
@@ -1049,9 +1082,10 @@ visibility 250ms cubic-bezier(0.4, 0, 0.2, 1)
     border: 0ch;
     border-radius: 4px;
     padding-top: 10px;
-    padding-left: 32px;
+    padding-left: 52px;
     padding-bottom: 10px;
-    padding-right: 32px;
+    padding-right: 52px;
+    
   
     border-radius: 4px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -1098,7 +1132,8 @@ visibility 250ms cubic-bezier(0.4, 0, 0.2, 1)
     font-weight: 400;
     font-size: 14px;
     line-height: 1.17;
-    background-color: #2F303A;;
+    background-color: #2F303A;
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-form-submit {
